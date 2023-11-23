@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color:brown;
+            position: absolute;
+            z-index: 2;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+        }
+        video{
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        let a=document.createElement("div")
+        console.log(a);
+       let body1=document.querySelector("body")
+       a.classList.add("div1")
+       body1.append(a)
+       let b=document.createElement("div")
+       b.classList.add("div2")
+       a.append(b)
+
+       let imag=document.createElement("img")
+       imag.src="https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg"
+       a.append(imag)
+    let vid=document.createElement("video")
+       vid.src="c:\Users\Abc\Downloads\matt_devir--one_minute_drive.mp4"
+       vid.controls="controls"
+       b.append(vid)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let a=document.createElement("h1");
+    console.log(a);
+    a.innerHTML="WELCOME TO DOM MANPULATION";
+    a.setAttribute("title","abc")
+
+    let body1=document.querySelector("body");
+    body1.append(a)
+
+    let div=document.createElement("div");
+    console.log(div);
+    // div.style.width="300px"
+    // div.style.height="300px"
+    // div.style.backgroundColor="red"
+
+    div.classList.add("abc");
+    div.setAttribute("id","abc1")
+    let p=document.createElement("p")
+    p.innerHTML="welcome"
+    div.append(p)
+    console.log(p);
+    body1.append(div)
+
+   
+   </script> 
+</body>
+</html>

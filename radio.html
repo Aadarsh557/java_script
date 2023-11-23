@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELECT YOUR GENDER</h1>
+ <input type="radio" name="gen" value="FEMALE">FEMALE 
+ <br>
+ <input type="radio" name="gen" value="MALE">MALE
+ <br>
+ <input type="radio" name="gen" value="OTHERS">OTHERS 
+ <br>
+ <button onclick="gender()">click</button>
+ <h1 id="abc"></h1>
+
+ <script>
+    function gender()
+    {
+        let gender=document.getElementsByName("gen");
+        console.log(gender);
+        let count=0;
+
+        for(i=0;i<=gender.length-1;i++)
+        {
+            count++;
+
+        }
+        document.querySelector("#abc").innerHTML=`the count of the radio buttons ${count}`
+
+    }
+ </script>
+</body>
+</html>

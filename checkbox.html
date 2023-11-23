@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #ip{
+            border: 2px solid red;
+            padding: 10px;
+            border: 0px;
+            outline: 0px;
+            border-radius: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <h1>SELECT YOUR SKILLS</h1>
+    <input type="checkbox" value="JAVA" id="ip">JAVA <br>
+    <input type="checkbox" value="REACT JS">REACT JS <br>
+    <input type="checkbox" value="ANGULAR JS">ANGULAR JS <br>
+    <input type="checkbox" value="WEB-TECHONOLGY">WEB-TECHONOLGY <br>
+    <input type="checkbox" value="SQL">SQL <br>
+    <input type="checkbox" value="PYTHON">PYHTON <br>
+    <input type="checkbox" value="TESTING">TESTING <br>
+    <button onclick="skills()">submit</button>
+    <h1 id="a"></h1>
+
+    <script>
+        function skills()
+        {
+            let inp=document.querySelectorAll("input");
+            console.log(inp);
+            let count=0;
+            for(i=0;i<=inp.length-1;i++)
+            {
+                if(inp[i].checked=="")
+                {
+                    document.querySelector("#a").innerHTML=`select any one`
+                }
+                if(inp[i].checked==true)
+                {
+                    count++;
+                    if(count<3)
+                    {
+                        document.querySelector("#a").innerHTML=`not eligible for any job`
+                        document.querySelector("#a").style.color=`red`
+                    }
+                    else if(count>=3 && count<5)
+                    {
+                        document.querySelector("#a").innerHTML=`eligible for one job`
+                        document.querySelector("#a").style.color=`green`
+                    }
+                    else if(count>=5 && count<7)
+                    {
+                        document.querySelector("#a").innerHTML=`eligible for any for job`
+
+                    }
+                    else{
+                        document.querySelector("#a").innerHTML=`eligible for any job`
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

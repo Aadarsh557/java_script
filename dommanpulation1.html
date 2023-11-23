@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        .div2{
+            height: 200px;
+            width: 200px;
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* z-index: 2; */
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 151px;
+            bottom: 351px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      let a=document.createElement("div")
+      console.log(a);
+     let body1=document.querySelector("body")
+     a.classList.add("div")
+     body1.append(a)
+     let b=document.createElement("div")
+     b.classList.add("div2")
+     a.append(b)
+
+     let img1=document.createElement("img");
+    img1.src="gaelle-marcel-9DZY0mO98xU-unsplash.jpg"
+    body1.append(img1)
+
+    </script>
+</body>
+</html>

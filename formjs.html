@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+        .container{
+            width: 500px;
+            height: 800px;
+            background-color: aqua;
+            border: 3px solid red;
+            border-radius: 40px;
+        }
+        .head{
+            background-color: blueviolet;
+        }
+        .head h1{
+            text-align: center;
+            color: blanchedalmond;
+            padding: 15px;
+            font-style: italic;
+        }
+        .field{
+            position: relative;
+        }
+        .field label{
+            display: block;
+            font-size: 20px;
+            padding: 15px;
+        }
+        .field input{
+            display: block;
+            width: 450px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .field span{
+            position: absolute;
+            left: 430px;
+            top: 60px;
+            visibility: hidden;
+        }
+        .field small{
+            visibility: hidden;
+        }
+        button{
+            padding: 20px 40px;
+            border-radius: 20px;
+            position: relative;
+            left: 180px;
+            top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>REGISTRATION FORM</h1>
+        </div>
+        <form action="">
+            <div class="field">
+                <label for="name">ENTER NAME</label>
+                <input type="text" id="name">
+                <h1 id="abc"></h1>
+                <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                <span class="material-symbols-outlined">
+                        error
+                        </span>
+            </div>
+            <div class="field">
+                <label for="phone number">ENTER PHONE NUMBER</label>
+                <input type="text" id="phone">
+                <!-- <h1 id="abc1"></h1> -->
+                <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                <span class="material-symbols-outlined">
+                        error
+                        </span>
+            </div>
+            <div class="field">
+                <label for="password">ENTER PASSWORD</label>
+                <input type="text" id="pass">
+                <!-- <h1 id="abc2"></h1> -->
+                <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                <span class="material-symbols-outlined">
+                        error
+                        </span>
+            </div>
+            <div class="field">
+                <label for="password">CONFORM PASSWORD</label>
+                <input type="text" id="cnpass">
+                <!-- <h1 id="abc3"></h1> -->
+                <span class="material-symbols-outlined">
+                    check_circle
+                    </span>
+                <span class="material-symbols-outlined">
+                        error
+                        </span>   
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
